@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import React, { useState } from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import useMediaQuery from "../hooks/useMediaQuery";
@@ -64,69 +64,83 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
         )}
 
         {/* MOBILE NAV */}
-        {!isAboveSmallScreens && isMenuToggled && (
-          <motion.div
-            key="mobile-nav"
-            variants={{
-              hide: {
-                x: "100%",
-                transition: {
-                  type: "spring",
-                  bounce: 0.1,
-                  when: "afterChildren",
-                  staggerChildren: 0.25,
+        <AnimatePresence>
+          {!isAboveSmallScreens && isMenuToggled && (
+            <motion.div
+              key="mobile-nav"
+              variants={{
+                hide: {
+                  x: "100%",
+                  transition: {
+                    type: "spring",
+                    bounce: 0.1,
+                    when: "afterChildren",
+                    staggerChildren: 0.25,
+                  },
                 },
-              },
-              show: {
-                x: "0%",
-                transition: {
-                  type: "spring",
-                  bounce: 0.1,
-                  when: "beforeChildren",
-                  staggerChildren: 0.25,
+                show: {
+                  x: "0%",
+                  transition: {
+                    type: "spring",
+                    bounce: 0.1,
+                    when: "beforeChildren",
+                    staggerChildren: 0.25,
+                  },
                 },
-              },
-            }}
-            initial="hide"
-            animate="show"
-            exit="hide"
-            className="fixed right-0 bottom-0 h-full bg-blue w-[300px]"
-          >
-            {/* CLOSE ICON */}
-            <div className="flex justify-end p-12">
-              <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
-                <img
-                  src="../assets/close-icon.svg"
-                  alt="close-icon"
-                />
-              </button>
-            </div>
+              }}
+              initial="hide"
+              animate="show"
+              exit="hide"
+              className="fixed right-0 bottom-0 h-full bg-blue w-[300px]"
+            >
+              {/* CLOSE ICON */}
+              <div className="flex justify-end p-12">
+                <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
+                  <img
+                    src="../assets/close-icon.svg"
+                    alt="close-icon"
+                  />
+                </button>
+              </div>
 
-            {/* MENU ITEMS */}
-            <div className="flex flex-col gap-10 ml-[33%] text-2xl text-deep-blue">
-              <Link
-                page="Home"
-                selectedPage={selectedPage}
-                setSelectedPage={setSelectedPage}
-              />
-              <Link
-                page="Skills"
-                selectedPage={selectedPage}
-                setSelectedPage={setSelectedPage}
-              />
-              <Link
-                page="Projects"
-                selectedPage={selectedPage}
-                setSelectedPage={setSelectedPage}
-              />
-              <Link
-                page="Contact"
-                selectedPage={selectedPage}
-                setSelectedPage={setSelectedPage}
-              />
-            </div>
-          </motion.div>
-        )}
+              {/* MENU ITEMS */}
+              <motion.div
+                variants={{
+                  hide: {
+                    y: "25%",
+                    opacity: 0,
+                  },
+                  show: {
+                    y: "0%",
+                    opacity: 1,
+                  },
+                }}
+                className="flex flex-col gap-10 ml-[33%] text-2xl text-deep-blue"
+              >
+                <Link
+                  page="Home"
+                  selectedPage={selectedPage}
+                  setSelectedPage={setSelectedPage}
+                />
+                <Link
+                  page="Skills"
+                  selectedPage={selectedPage}
+                  setSelectedPage={setSelectedPage}
+                />
+                <Link
+                  page="Projects"
+                  selectedPage={selectedPage}
+                  setSelectedPage={setSelectedPage}
+                />
+                <Link
+                  page="Contact"
+                  selectedPage={selectedPage}
+                  setSelectedPage={setSelectedPage}
+                />
+              </motion.div>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
     </nav>
   );
