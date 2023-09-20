@@ -586,6 +586,46 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.container{
+  width: 100%;
+}
+
+@media (min-width: 480px){
+  .container{
+    max-width: 480px;
+  }
+}
+
+@media (min-width: 620px){
+  .container{
+    max-width: 620px;
+  }
+}
+
+@media (min-width: 768px){
+  .container{
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1060px){
+  .container{
+    max-width: 1060px;
+  }
+}
+
+@media (min-width: 1200px){
+  .container{
+    max-width: 1200px;
+  }
+}
+
+@media (min-width: 1700px){
+  .container{
+    max-width: 1700px;
+  }
+}
+
 .visible{
   visibility: visible;
 }
@@ -660,6 +700,11 @@ video {
   margin-bottom: 2.5rem;
 }
 
+.my-5{
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
 .ml-\[33\%\]{
   margin-left: 33%;
 }
@@ -696,6 +741,34 @@ video {
   margin-bottom: 1.25rem;
 }
 
+.mb-10{
+  margin-bottom: 2.5rem;
+}
+
+.mt-3{
+  margin-top: 0.75rem;
+}
+
+.mt-7{
+  margin-top: 1.75rem;
+}
+
+.ml-\[10\%\]{
+  margin-left: 10%;
+}
+
+.ml-\[15\%\]{
+  margin-left: 15%;
+}
+
+.mt-1{
+  margin-top: 0.25rem;
+}
+
+.mb-0{
+  margin-bottom: 0px;
+}
+
 .flex{
   display: flex;
 }
@@ -722,6 +795,22 @@ video {
 
 .h-32{
   height: 8rem;
+}
+
+.h-64{
+  height: 16rem;
+}
+
+.h-40{
+  height: 10rem;
+}
+
+.h-24{
+  height: 6rem;
+}
+
+.max-h-\[400px\]{
+  max-height: 400px;
 }
 
 .w-5\/6{
@@ -752,6 +841,10 @@ video {
   width: 50%;
 }
 
+.w-10\/12{
+  width: 83.333333%;
+}
+
 .max-w-\[400px\]{
   max-width: 400px;
 }
@@ -762,6 +855,10 @@ video {
 
 .basis-2\/5{
   flex-basis: 40%;
+}
+
+.basis-1\/2{
+  flex-basis: 50%;
 }
 
 .resize{
@@ -776,8 +873,16 @@ video {
   flex-direction: column;
 }
 
+.items-start{
+  align-items: flex-start;
+}
+
 .items-center{
   align-items: center;
+}
+
+.justify-start{
+  justify-content: flex-start;
 }
 
 .justify-end{
@@ -856,6 +961,21 @@ video {
   background-color: rgb(253 204 73 / var(--tw-bg-opacity));
 }
 
+.bg-white{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-black{
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.bg-grey{
+  --tw-bg-opacity: 1;
+  background-color: rgb(237 237 237 / var(--tw-bg-opacity));
+}
+
 .bg-gradient-rainblue{
   background-image: linear-gradient(90deg, #24CBFF 14.53%, #FC59FF 69.36%, #FFBD0C 117.73%);
 }
@@ -866,6 +986,22 @@ video {
 
 .p-12{
   padding: 3rem;
+}
+
+.p-10{
+  padding: 2.5rem;
+}
+
+.p-16{
+  padding: 4rem;
+}
+
+.p-3{
+  padding: 0.75rem;
+}
+
+.p-5{
+  padding: 1.25rem;
 }
 
 .py-6{
@@ -903,6 +1039,11 @@ video {
   padding-right: 2.5rem;
 }
 
+.py-48{
+  padding-top: 12rem;
+  padding-bottom: 12rem;
+}
+
 .pr-0{
   padding-right: 0px;
 }
@@ -917,6 +1058,18 @@ video {
 
 .pt-10{
   padding-top: 2.5rem;
+}
+
+.pb-48{
+  padding-bottom: 12rem;
+}
+
+.pt-48{
+  padding-top: 12rem;
+}
+
+.pt-5{
+  padding-top: 1.25rem;
 }
 
 .text-center{
@@ -987,6 +1140,19 @@ video {
 .text-blue{
   --tw-text-opacity: 1;
   color: rgb(44 188 233 / var(--tw-text-opacity));
+}
+
+.text-black{
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.placeholder-opaque-black::-webkit-input-placeholder{
+  color: rgba(0,0,0,0.35);
+}
+
+.placeholder-opaque-black::placeholder{
+  color: rgba(0,0,0,0.35);
 }
 
 .opacity-0{
@@ -1152,6 +1318,11 @@ body,
   background-color: rgb(44 188 233 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-red:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(220 68 146 / var(--tw-bg-opacity));
+}
+
 .hover\:text-yellow:hover{
   --tw-text-opacity: 1;
   color: rgb(253 204 73 / var(--tw-text-opacity));
@@ -1169,6 +1340,10 @@ body,
 
 .hover\:opacity-50:hover{
   opacity: 0.5;
+}
+
+.hover\:opacity-90:hover{
+  opacity: 0.9;
 }
 
 .hover\:saturate-200:hover{
@@ -1202,6 +1377,16 @@ body,
   }
 }
 
+@media (min-width: 768px){
+  .sm\:grid{
+    display: grid;
+  }
+
+  .sm\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
 @media (min-width: 1060px){
   .md\:order-2{
     order: 2;
@@ -1231,6 +1416,14 @@ body,
     width: 75%;
   }
 
+  .md\:w-2\/5{
+    width: 40%;
+  }
+
+  .md\:w-2\/4{
+    width: 50%;
+  }
+
   .md\:max-w-\[600px\]{
     max-width: 600px;
   }
@@ -1241,6 +1434,10 @@ body,
 
   .md\:justify-start{
     justify-content: flex-start;
+  }
+
+  .md\:justify-end{
+    justify-content: flex-end;
   }
 
   .md\:justify-center{

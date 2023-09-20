@@ -55,7 +55,7 @@ const MySkills = () => {
         </div>
       </div>
       {/* SKILLS */}
-      <div className="md:flex md:justify-between mt16 gap-32">
+      <div className="md:flex md:justify-between mt-16 gap-32">
         {/* EXPERIENCE */}
         <motion.div
           className="md:w-1/3 mt-10"

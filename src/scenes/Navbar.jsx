@@ -91,13 +91,13 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
               initial="hide"
               animate="show"
               exit="hide"
-              className="fixed right-0 bottom-0 h-full bg-blue w-[300px]"
+              className="fixed right-0 bottom-0 h-full bg-grey w-[300px]"
             >
               {/* CLOSE ICON */}
               <div className="flex justify-end p-12">
                 <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
                   <img
-                    src="../assets/close-icon.svg"
+                    src="../assets/close-button-black.png"
                     alt="close-icon"
                   />
                 </button>
@@ -115,7 +115,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
                     opacity: 1,
                   },
                 }}
-                className="flex flex-col gap-10 ml-[33%] text-2xl text-deep-blue"
+                className="flex flex-col gap-10 ml-[15%] text-2xl text-deep-blue"
               >
                 <Link
                   page="Home"
