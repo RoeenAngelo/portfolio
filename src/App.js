@@ -16,8 +16,20 @@ function App() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY === 0) setisTopOfPage(true);
-      if (window.scrollY !== 0) setisTopOfPage(false);
+      const scrollPos = window.scrollY;
+      const width = window.innerWidth;
+      if (scrollPos === 0) setisTopOfPage(true);
+      if (scrollPos !== 0) setisTopOfPage(false);
+
+      if (width > 960 && scrollPos < 600) {
+        setSelectedPage("home");
+      } else if (width > 1060 && scrollPos < 1300) {
+        setSelectedPage("skills");
+      } else if (width > 1060 && scrollPos < 2900) {
+        setSelectedPage("projects");
+      } else if (width > 1060 && scrollPos < 4600) {
+        setSelectedPage("contact");
+      }
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
