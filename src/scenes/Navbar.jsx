@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import React, { useState } from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import useMediaQuery from "../hooks/useMediaQuery";
@@ -64,7 +65,33 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
 
         {/* MOBILE NAV */}
         {!isAboveSmallScreens && isMenuToggled && (
-          <div className="fixed right-0 bottom-0 h-full bg-blue w-[300px]">
+          <motion.div
+            key="mobile-nav"
+            variants={{
+              hide: {
+                x: "100%",
+                transition: {
+                  type: "spring",
+                  bounce: 0.1,
+                  when: "afterChildren",
+                  staggerChildren: 0.25,
+                },
+              },
+              show: {
+                x: "0%",
+                transition: {
+                  type: "spring",
+                  bounce: 0.1,
+                  when: "beforeChildren",
+                  staggerChildren: 0.25,
+                },
+              },
+            }}
+            initial="hide"
+            animate="show"
+            exit="hide"
+            className="fixed right-0 bottom-0 h-full bg-blue w-[300px]"
+          >
             {/* CLOSE ICON */}
             <div className="flex justify-end p-12">
               <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
@@ -98,7 +125,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
                 setSelectedPage={setSelectedPage}
               />
             </div>
-          </div>
+          </motion.div>
         )}
       </div>
     </nav>

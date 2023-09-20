@@ -14,7 +14,7 @@ const SocialMediaIcons = () => {
           alt="linkedin-link"
         />
       </a>
-      {/* <a
+      <a
         className="hover:opacity-50 transition duration-500"
         href="https://github.com/RoeenAngelo"
         target="_blank"
@@ -24,8 +24,8 @@ const SocialMediaIcons = () => {
           src="../assets/github.png"
           alt="github-link"
         />
-      </a> */}
-      <a
+      </a>
+      {/* <a
         className="hover:opacity-50 transition duration-500"
         href="https:/www.instagram.com"
         target="_blank"
@@ -57,7 +57,7 @@ const SocialMediaIcons = () => {
           src="../assets/facebook.png"
           alt="facebook-link"
         />
-      </a>
+      </a> */}
     </div>
   );
 };

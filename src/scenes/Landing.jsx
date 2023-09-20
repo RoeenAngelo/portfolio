@@ -51,14 +51,15 @@ const Landing = ({ setSelectedPage }) => {
           <p className="text-6xl font-playfair z-10 text-center md:text-start">
             Roeen {""}
             <span
-              className="xs:relative xs:text-deep-blue xs:font-semibold z-20 xs:before:content-brush
+              className="xs:relative  xs:font-semibold z-20 
               before:absolute before:-left-[25px] before:-top-[70px] before:z-[-1]"
             >
               Angelo
             </span>
           </p>
           <p className="mt-10 mb-7 text-sm text-center md:text-start">
-            something
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa,
+            adipisci.
           </p>
         </motion.div>
 
