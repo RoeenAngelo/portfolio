@@ -881,6 +881,10 @@ video {
   max-width: 400px;
 }
 
+.max-w-\[1300px\]{
+  max-width: 1300px;
+}
+
 .basis-3\/5{
   flex-basis: 60%;
 }
