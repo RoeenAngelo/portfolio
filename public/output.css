@@ -1344,6 +1344,11 @@ body,
   top: -2.5rem;
 }
 
+.before\:-top-16::before{
+  content: var(--tw-content);
+  top: -4rem;
+}
+
 .before\:z-\[-1\]::before{
   content: var(--tw-content);
   z-index: -1;
@@ -1359,6 +1364,11 @@ body,
   height: 100%;
 }
 
+.before\:h-5\/6::before{
+  content: var(--tw-content);
+  height: 83.333333%;
+}
+
 .before\:w-6::before{
   content: var(--tw-content);
   width: 1.5rem;
@@ -1369,9 +1379,24 @@ body,
   width: 100%;
 }
 
+.before\:w-5\/6::before{
+  content: var(--tw-content);
+  width: 83.333333%;
+}
+
+.before\:w-4\/6::before{
+  content: var(--tw-content);
+  width: 66.666667%;
+}
+
 .before\:max-w-\[400px\]::before{
   content: var(--tw-content);
   max-width: 400px;
+}
+
+.before\:max-w-\[300px\]::before{
+  content: var(--tw-content);
+  max-width: 300px;
 }
 
 .before\:rounded-full::before{
@@ -1383,6 +1408,12 @@ body,
   content: var(--tw-content);
   border-top-left-radius: 400px;
   border-top-right-radius: 400px;
+}
+
+.before\:rounded-t-\[300px\]::before{
+  content: var(--tw-content);
+  border-top-left-radius: 300px;
+  border-top-right-radius: 300px;
 }
 
 .before\:border-2::before{
@@ -1552,5 +1583,10 @@ body,
   .md\:before\:max-w-\[600px\]::before{
     content: var(--tw-content);
     max-width: 600px;
+  }
+
+  .md\:before\:max-w-\[500px\]::before{
+    content: var(--tw-content);
+    max-width: 500px;
   }
 }
