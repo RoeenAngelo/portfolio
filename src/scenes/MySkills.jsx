@@ -25,7 +25,7 @@ const MySkills = () => {
           }}
         >
           <p className="font-playfair font-semibold text-4xl mb-5">
-            MY <span className="text-red">SKILLS</span>
+            MY <span className="text-blue">SKILLS</span>
           </p>
           <LineGradient width="w-1/3" />
           <h3 className="mt-10 mb-7 [word-spacing:10px]">
@@ -56,7 +56,7 @@ const MySkills = () => {
       </div>
       {/* SKILLS */}
       <div className="md:flex md:justify-between mt-16 gap-32">
-        {/* EXPERIENCE */}
+        {/* COLLABORATIVE */}
         <motion.div
           className="md:w-1/3 mt-10"
           initial="hidden"
@@ -75,7 +75,7 @@ const MySkills = () => {
                 Collaborative
               </p>
             </div>
-            <div className="w-1/2 md:w-3/4 h-32 bg-blue absolute right-0 top-0 z-[-1]" />
+            <div className="w-1/2 md:w-3/4 h-32 bg-red absolute right-0 top-0 z-[-1]" />
             <p className="mt-5">
               Experienced in working with multidisciplinary teams and other
               agencies.
@@ -102,7 +102,7 @@ const MySkills = () => {
                 Innovative
               </p>
             </div>
-            <div className="w-1/2 md:w-3/4 h-32 bg-red absolute right-0 top-0 z-[-1]" />
+            <div className="w-1/2 md:w-3/4 h-32 bg-blue absolute right-0 top-0 z-[-1]" />
             <p className="mt-5">
               Acquire new skills and knowledge to remain at the forefront of web
               development innovation.

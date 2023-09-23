@@ -1,6 +1,7 @@
 import React from "react";
 import LineGradient from "../components/LineGradient";
 import { motion } from "framer-motion";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const container = {
   hidden: {},
@@ -14,7 +15,7 @@ const projectVariant = {
   visible: { opacity: 1, scale: 1 },
 };
 
-const Project = ({ title, subtitle }) => {
+const Project = ({ title, subtitle, link }) => {
   const projectTitle = title.toLowerCase().split(" ").join("-");
   const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500
     bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue`;
@@ -24,11 +25,16 @@ const Project = ({ title, subtitle }) => {
       variants={projectVariant}
       className="relative"
     >
-      <div className={overlayStyles}>
-        <p className="text-2xl font-playfair">{title}</p>
-        <p className="mt-7">{subtitle}</p>
-      </div>
-
+      <a
+        href={link}
+        target="_blank"
+      >
+        {" "}
+        <div className={overlayStyles}>
+          <p className="text-2xl font-playfair">{title}</p>
+          <p className="mt-7">{subtitle}</p>
+        </div>
+      </a>
       <img
         src={`../assets/portfolio-projects-pics/${projectTitle}.png`}
         alt=""
@@ -41,7 +47,7 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="pt-48 pb-48"
+      className="pt-48 pb-48 h-full"
     >
       {/* HEADINGS */}
       <motion.div
@@ -57,17 +63,14 @@ const Projects = () => {
       >
         <div>
           <p className="font-playfair font-semibold text-4xl">
-            MY <span className="text-red">PRO</span>JECTS
+            MY <span className="text-blue">PRO</span>JECTS
           </p>
           <div className="flex justify-center mt-5">
             <LineGradient width="w-1/3" />
           </div>
         </div>
 
-        <p className="mt-10 mb-10">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi
-          recusandae sapiente voluptates natus voluptatibus animi deserunt
-        </p>
+        <p className="mt-10 mb-10"></p>
       </motion.div>
 
       {/* PROJECTS */}
@@ -86,6 +89,7 @@ const Projects = () => {
           <Project
             title="Project 1"
             subtitle={"BGA Golf - A website I made for my golf league."}
+            link="https://roeenangelo.github.io/vue-bga/"
           />
           <Project
             title="Project 2"

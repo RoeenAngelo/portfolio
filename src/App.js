@@ -56,7 +56,7 @@ function App() {
         <MySkills />
       </div>
       <LineGradient />
-      <div className="w-5/6 mx-auto">
+      <div className="w-5/6 mx-auto md:h-full">
         <Projects />
       </div>
       <LineGradient />
