@@ -40,15 +40,15 @@ const MySkills = () => {
                 before:w-full before:h-full before:border-2 before:border-blue before:z-[-1]"
             >
               <img
-                className="z-10 "
-                src="assets/skills-image.png"
+                className="z-10 h-[250px] w-[600px]"
+                src="assets/react.jpg"
                 alt="skills"
               />
             </div>
           ) : (
             <img
-              className="z-10 "
-              src="assets/skills-image.png"
+              className="z-10 h-[250px] w-[600px]"
+              src="assets/react.jpg"
               alt="skills"
             />
           )}

@@ -821,6 +821,14 @@ video {
   height: 700;
 }
 
+.h-\[300px\]{
+  height: 300px;
+}
+
+.h-\[250px\]{
+  height: 250px;
+}
+
 .max-h-\[400px\]{
   max-height: 400px;
 }
@@ -859,6 +867,14 @@ video {
 
 .w-\[200\]{
   width: 200;
+}
+
+.w-\[400px\]{
+  width: 400px;
+}
+
+.w-\[600px\]{
+  width: 600px;
 }
 
 .max-w-\[400px\]{
