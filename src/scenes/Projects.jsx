@@ -30,7 +30,7 @@ const Project = ({ title, subtitle, link, picLink }) => {
       className="relative"
     >
       <a
-        href={picLink}
+        href={link}
         target="_blank"
       >
         {" "}
@@ -41,7 +41,6 @@ const Project = ({ title, subtitle, link, picLink }) => {
       </a>
       <img
         src={picLink}
-        // src={`../assets/portfolio-projects-pics/${projectTitle}.png`}
         alt=""
       />
     </motion.div>
