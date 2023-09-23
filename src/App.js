@@ -36,7 +36,7 @@ function App() {
   }, []);
 
   return (
-    <div className="app bg-deep-blue">
+    <div className="app bg-deep-blue w-full max-width-[1300px]">
       <Navbar
         isTopOfPage={isTopOfPage}
         selectedPage={selectedPage}

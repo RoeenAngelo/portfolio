@@ -92,15 +92,13 @@ const Projects = () => {
           </div> */}
           <Project
             title="Project 1"
-            subtitle={"BGA Golf - A website I made for my golf league."}
+            subtitle={"BGA Golf - a website I made for my golf league"}
             link="https://roeenangelo.github.io/vue-bga/"
             picLink={project1}
           />
           <Project
             title="Project 2"
-            subtitle={
-              "CRUD app that allows clients to order pizza and the owner to edit the menu and authorize user privileges."
-            }
+            subtitle={"a pizza ordering app"}
             link="https://roeenangelo.github.io/vue-pizza-firebase-vite/"
             picLink={project2}
           />
@@ -108,7 +106,7 @@ const Projects = () => {
           {/* ROW 2 */}
           <Project
             title="Project 3"
-            subtitle={"An Instagram clone"}
+            subtitle={"an Instagram clone"}
             picLink={project3}
           />
           {/* <Project
