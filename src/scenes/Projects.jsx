@@ -96,6 +96,7 @@ const Projects = () => {
             subtitle={
               "CRUD app that allows clients to order pizza and the owner to edit the menu and authorize user privileges."
             }
+            link="https://roeenangelo.github.io/vue-pizza-firebase-vite/"
           />
 
           {/* ROW 2 */}
