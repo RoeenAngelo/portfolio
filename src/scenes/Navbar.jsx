@@ -3,6 +3,9 @@ import React, { useState } from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import useMediaQuery from "../hooks/useMediaQuery";
 
+import menuButton from "../assets/menu-icon.svg";
+import closeButton from "../assets/close-button-black.png";
+
 const Link = ({ page, selectedPage, setSelectedPage }) => {
   const lowerCasePage = page.toLowerCase();
   return (
@@ -57,7 +60,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
             onClick={() => setIsMenuToggled(!isMenuToggled)}
           >
             <img
-              src="../assets/menu-icon.svg"
+              src={menuButton}
               alt="menu-icon"
             />
           </button>
@@ -97,7 +100,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
               <div className="flex justify-end p-12">
                 <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
                   <img
-                    src="../assets/close-button-black.png"
+                    src={closeButton}
                     alt="close-icon"
                   />
                 </button>

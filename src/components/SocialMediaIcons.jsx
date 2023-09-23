@@ -1,4 +1,6 @@
 import React from "react";
+import linkedInPic from "../assets/linkedin.png";
+import githubPic from "../assets/github.png";
 
 const SocialMediaIcons = () => {
   return (
@@ -10,7 +12,7 @@ const SocialMediaIcons = () => {
         rel="noreferrer"
       >
         <img
-          src="../assets/linkedin.png"
+          src={linkedInPic}
           alt="linkedin-link"
         />
       </a>
@@ -21,7 +23,7 @@ const SocialMediaIcons = () => {
         rel="noreferrer"
       >
         <img
-          src="../assets/github.png"
+          src={githubPic}
           alt="github-link"
         />
       </a>

@@ -4,6 +4,10 @@ import AnchorLink from "react-anchor-link-smooth-scroll";
 import useMediaQuery from "../hooks/useMediaQuery";
 import SocialMediaIcons from "../components/SocialMediaIcons";
 
+import profilePic from "../assets/royosemite.png";
+import linkedInPic from "../assets/linkedin.png";
+import githubPic from "../assets/github.png";
+
 const Landing = ({ setSelectedPage }) => {
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
 
@@ -21,14 +25,14 @@ const Landing = ({ setSelectedPage }) => {
           >
             <img
               className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[600px]"
-              src="./assets/royosemite.png"
+              src={profilePic}
               alt="profile"
             />
           </div>
         ) : (
           <img
             className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[600px]"
-            src="./assets/royosemite.png"
+            src={profilePic}
             alt="profile"
           />
         )}

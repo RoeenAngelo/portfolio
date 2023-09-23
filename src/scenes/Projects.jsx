@@ -3,6 +3,10 @@ import LineGradient from "../components/LineGradient";
 import { motion } from "framer-motion";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
+import project1 from "../assets/portfolio-projects-pics/project-1.png";
+import project2 from "../assets/portfolio-projects-pics/project-2.png";
+import project3 from "../assets/portfolio-projects-pics/project-3.png";
+
 const container = {
   hidden: {},
   visible: {
@@ -15,7 +19,7 @@ const projectVariant = {
   visible: { opacity: 1, scale: 1 },
 };
 
-const Project = ({ title, subtitle, link }) => {
+const Project = ({ title, subtitle, link, picLink }) => {
   const projectTitle = title.toLowerCase().split(" ").join("-");
   const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500
     bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue`;
@@ -26,7 +30,7 @@ const Project = ({ title, subtitle, link }) => {
       className="relative"
     >
       <a
-        href={link}
+        href={picLink}
         target="_blank"
       >
         {" "}
@@ -36,7 +40,8 @@ const Project = ({ title, subtitle, link }) => {
         </div>
       </a>
       <img
-        src={`../assets/portfolio-projects-pics/${projectTitle}.png`}
+        src={picLink}
+        // src={`../assets/portfolio-projects-pics/${projectTitle}.png`}
         alt=""
       />
     </motion.div>
@@ -90,6 +95,7 @@ const Projects = () => {
             title="Project 1"
             subtitle={"BGA Golf - A website I made for my golf league."}
             link="https://roeenangelo.github.io/vue-bga/"
+            picLink={project1}
           />
           <Project
             title="Project 2"
@@ -97,12 +103,14 @@ const Projects = () => {
               "CRUD app that allows clients to order pizza and the owner to edit the menu and authorize user privileges."
             }
             link="https://roeenangelo.github.io/vue-pizza-firebase-vite/"
+            picLink={project2}
           />
 
           {/* ROW 2 */}
           <Project
             title="Project 3"
             subtitle={"An Instagram clone"}
+            picLink={project3}
           />
           {/* <Project
             title="Project 4"

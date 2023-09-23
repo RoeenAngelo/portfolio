@@ -3,6 +3,8 @@ import LineGradient from "../components/LineGradient";
 import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
 
+import reactPic from "../assets/react.jpg";
+
 const MySkills = () => {
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
 
@@ -41,14 +43,14 @@ const MySkills = () => {
             >
               <img
                 className="z-10 h-[250px] w-[600px]"
-                src="assets/react.jpg"
+                src={reactPic}
                 alt="skills"
               />
             </div>
           ) : (
             <img
               className="z-10 h-[250px] w-[600px]"
-              src="assets/react.jpg"
+              src={reactPic}
               alt="skills"
             />
           )}
