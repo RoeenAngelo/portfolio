@@ -28,8 +28,9 @@ const Project = ({ title, subtitle }) => {
         <p className="text-2xl font-playfair">{title}</p>
         <p className="mt-7">{subtitle}</p>
       </div>
+
       <img
-        src={`../assets/${projectTitle}.jpeg`}
+        src={`../assets/portfolio-projects-pics/${projectTitle}.png`}
         alt=""
       />
     </motion.div>
@@ -72,51 +73,53 @@ const Projects = () => {
       {/* PROJECTS */}
       <div className="flex justify-center">
         <motion.div
-          className="sm:grid sm:grid-cols-3"
+          className="sm:grid sm:grid-cols-3 gap-1"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
           variants={container}
         >
           {/* ROW 1 */}
-          <div className="flex justify-center text-center items-center p-10 bg-red max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold">
+          {/* <div className="flex justify-center text-center items-center p-10 bg-red max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold">
             BEAUTIFUL USER INTERFACES
-          </div>
+          </div> */}
           <Project
             title="Project 1"
-            subtitle={"Project Subtitle"}
+            subtitle={"BGA Golf - A website I made for my golf league."}
           />
           <Project
             title="Project 2"
-            subtitle={"Project Subtitle"}
+            subtitle={
+              "CRUD app that allows clients to order pizza and the owner to edit the menu and authorize user privileges."
+            }
           />
 
           {/* ROW 2 */}
           <Project
             title="Project 3"
-            subtitle={"Project Subtitle"}
+            subtitle={"An Instagram clone"}
           />
-          <Project
+          {/* <Project
             title="Project 4"
             subtitle={"Project Subtitle"}
           />
           <Project
             title="Project 5"
             subtitle={"Project Subtitle"}
-          />
+          /> */}
 
           {/* ROW 3 */}
-          <Project
+          {/* <Project
             title="Project 6"
             subtitle={"Project Subtitle"}
-          />
-          <Project
+          /> */}
+          {/* <Project
             title="Project 7"
             subtitle={"Project Subtitle"}
-          />
-          <div className="flex justify-center text-center items-center p-10 bg-blue max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold">
+          /> */}
+          {/* <div className="flex justify-center text-center items-center p-10 bg-blue max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold">
             SMOOTH USER EXPERIENCE
-          </div>
+          </div> */}
         </motion.div>
       </div>
     </section>

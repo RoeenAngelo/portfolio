@@ -28,10 +28,10 @@ const MySkills = () => {
             MY <span className="text-red">SKILLS</span>
           </p>
           <LineGradient width="w-1/3" />
-          <p className="mt-10 mb-7">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi
-            recusandae sapiente voluptates natus voluptatibus animi deserunt
-          </p>
+          <h3 className="mt-10 mb-7 [word-spacing:10px]">
+            HTML CSS JAVASCRIPT REACT VUE TAILWIND FRAMER-MOTION GITHUB NODEJS
+            EXPRESS MONGODB REACT-NATIVE FIREBASE SUPABASE
+          </h3>
         </motion.div>
         <div className="mt-16 md:mt-0">
           {isAboveMediumScreens ? (
@@ -70,13 +70,15 @@ const MySkills = () => {
         >
           <div className="relative h-32">
             <div className="z-10">
-              <p className="font-playfair font-semibold text-5xl">01</p>
-              <p className="font-playfair font-semibold text-3xl">Experience</p>
+              <p className="font-playfair font-semibold text-5xl"></p>
+              <p className="font-playfair font-semibold text-3xl pt-7">
+                Collaborative
+              </p>
             </div>
             <div className="w-1/2 md:w-3/4 h-32 bg-blue absolute right-0 top-0 z-[-1]" />
             <p className="mt-5">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Reiciendis, ea corrupti!
+              Experienced in working with multidisciplinary teams and other
+              agencies.
             </p>
           </div>
         </motion.div>
@@ -95,13 +97,15 @@ const MySkills = () => {
         >
           <div className="relative h-32">
             <div className="z-10">
-              <p className="font-playfair font-semibold text-5xl">02</p>
-              <p className="font-playfair font-semibold text-3xl">Innovative</p>
+              <p className="font-playfair font-semibold text-5xl"></p>
+              <p className="font-playfair font-semibold text-3xl pt-7">
+                Innovative
+              </p>
             </div>
             <div className="w-1/2 md:w-3/4 h-32 bg-red absolute right-0 top-0 z-[-1]" />
             <p className="mt-5">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Laboriosam esse, aperiam accusamus adipisci vitae dignissimos?
+              Acquire new skills and knowledge to remain at the forefront of web
+              development innovation.
             </p>
           </div>
         </motion.div>
@@ -120,15 +124,15 @@ const MySkills = () => {
         >
           <div className="relative h-32">
             <div className="z-10">
-              <p className="font-playfair font-semibold text-5xl">03</p>
-              <p className="font-playfair font-semibold text-3xl">
+              <p className="font-playfair font-semibold text-5xl"></p>
+              <p className="font-playfair font-semibold text-3xl pt-7">
                 Imaginative
               </p>
             </div>
             <div className="w-1/2 md:w-3/4 h-32 bg-yellow absolute right-0 top-0 z-[-1]" />
             <p className="mt-5">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Laboriosam esse, aperiam accusamus adipisci vitae dignissimos?
+              Approach problems with a fresh perspective to create simple
+              solutions.
             </p>
           </div>
         </motion.div>

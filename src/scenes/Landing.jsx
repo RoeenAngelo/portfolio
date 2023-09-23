@@ -10,10 +10,10 @@ const Landing = ({ setSelectedPage }) => {
   return (
     <section
       id="home"
-      className="md:flex md:justify-between md:items-center md:h-full gap-16 py-10"
+      className="md:flex md:justify-center md:items-center md:h-full gap-16 py-10"
     >
       {/* IMAGE  */}
-      <div className="md:order-2 flex justify-center basis-3/5 z-10 mt-16 md:mt-32">
+      {/* <div className="md:order-2 flex justify-center basis-3/5 z-10 mt-16 md:mt-32">
         {isAboveMediumScreens ? (
           <div
             className="relative z-0 ml-20 before:absolute before:-top-20 before:-left-20 before:rounded-t-[400px]
@@ -32,7 +32,7 @@ const Landing = ({ setSelectedPage }) => {
             alt="profile"
           />
         )}
-      </div>
+      </div> */}
 
       {/* MAIN TEXT */}
       <div className="z-30 basis-2/5 mt-12 md:mt-32">
@@ -58,8 +58,7 @@ const Landing = ({ setSelectedPage }) => {
             </span>
           </p>
           <p className="mt-10 mb-7 text-sm text-center md:text-start">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa,
-            adipisci.
+            I love making things for the web. No Surf No Life.
           </p>
         </motion.div>
 
